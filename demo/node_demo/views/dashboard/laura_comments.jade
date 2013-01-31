@@ -1,0 +1,24 @@
+.mainContent
+	
+	!= partial('dashboard/laura_profile')
+
+	.comments
+		!= partial('dashboard/_dashboard_navigation_comments')
+
+	.dashboardContent
+
+		.commentsFilter
+			a(href="/dashboard/laura.fabian/comments/filter") Show Favorites
+
+		!= partial('dashboard/_laura_comments')
+
+		!= partial('dashboard/_laura_comments_others')
+
+		!= partial('dashboard/_laura_comments')
+
+		!= partial('dashboard/_laura_comments_others')
+				
+
+.sidebar
+	.adverts
+		img(src="/img/temp.jpg")

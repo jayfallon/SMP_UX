@@ -1,0 +1,99 @@
+.footer{
+	margin-top:24px;
+	@include clearfix;
+}
+.footerWrapper{
+	background-color:#ececec;
+	padding:0;
+	border:1px solid #ddd;
+	@include clearfix;
+}
+.footerSection{
+	margin:6px 0;
+	padding:12px;
+	border-right:1px solid #ccc;
+	border-left:1px solid #fff;
+	width:266px;
+	min-height:330px;
+	float:left;
+	@include clearfix;
+	h4, h5{
+		margin:0;
+		padding:0;
+		a{
+			color:#333;
+		}
+	}
+	h4{
+		padding:12px 0;
+		border-bottom:1px solid #ccc;
+		a{
+			text-decoration:none;
+		}
+	}
+	ul.footerNav{
+		padding:8px 0;
+		border-bottom:1px solid #ccc;
+		li{
+			padding:4px 0;
+			a{
+				color:#333;
+				font-size:16px;
+				font-weight:normal;
+			}
+		}
+		li.seeAll{
+			a{
+				font-size:12px;
+				text-decoration:underline;
+			}
+		}
+	}
+	ul.bottom{
+		border-bottom:0;
+	}
+}
+
+.footerSection:last-child{
+	border-right:0px;
+}
+
+.footerSection:first-child{
+	border-left:0px;
+}
+
+
+.footerCopyright{
+	padding:18px 0 12px 0;
+	text-align:right;
+}
+
+.footer .social{
+	ul{
+		float:left;
+	}
+	li{
+		padding-left:12px;
+		width:24px;
+		height:24px;
+		float:left;
+		a{
+			width:24px;
+			height:24px;
+			position:absolute;
+			span{
+				display:none;
+			}
+		}
+	}
+	li.pinterest{
+		background:url('/img/glyphicons_360_pinterest.png') no-repeat;
+	}
+	li.facebook{
+		background:url('/img/glyphicons_390_facebook.png') no-repeat;
+	}
+	li.twitter{
+		background:url('/img/glyphicons_392_twitter.png') no-repeat;
+		margin-right:-12px;
+	}
+}

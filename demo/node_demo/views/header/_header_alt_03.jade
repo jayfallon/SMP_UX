@@ -1,0 +1,50 @@
+//build a board
+.boardBuilder.alt_03
+	a(href="/board_builder")
+		span Build A Board
+
+.header	
+	.headerPromotion
+		//searchbox
+		.searchbox.alt_03
+			form(action="/search", method="get")
+				input(name="search", type="text")
+				a.searchButton(href="/") Search
+	.headerLogo
+		//logo
+		h1.mainLogo
+			a(href="/")
+				span Style Me Pretty
+	.headerAction
+		//userbar
+		.userbar
+			ul
+				li.user
+					.avatar
+						a(href="/dashboard/laura.fabian")
+							img(src="/img/temp/laura_thumb.png", width="32", height="32")
+					.username
+						a(href="/dashboard/laura.fabian") Laura Fabian
+					.usersettings
+						a(href="/dashboard/laura.fabian/edit/profile")
+							img(src="/img/settings.png")
+				li.help 
+					a(href="/help") Help
+				li.quickboard 
+					a(href="/quickboard") Quickboard
+		//social
+		.social.alt_03
+			ul
+				li.pinterest
+					a(href="http://pinterest.com/stylemepretty/") 
+						span Pinterest
+				li.facebook
+					a(href="https://www.facebook.com/stylemepretty") 
+						span Facebook
+				li.twitter
+					a(href="https://twitter.com/#!/stylemepretty") 
+						span Twitter
+
+
+//mainNav
+!= partial('header/main_nav')

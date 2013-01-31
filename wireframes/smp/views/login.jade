@@ -1,0 +1,30 @@
+!!! 5
+html(lang="en")
+
+	head
+		//if lt IE 9
+			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		title UX Guide: Stylemepretty.com
+		meta(name="description", content="sample node.js app with bootstrap")
+		meta(name="author", content="jayfallon")
+		meta(name='viewport', content='width=device-width', initial-scale='1.0')
+
+		link(href="/css/bootstrap.min.css", rel="stylesheet")
+		link(href="/css/spacelab_bootstrap.min.css", rel="stylesheet")
+
+		link(href="/css/bootstrap-responsive.min.css", rel="stylesheet")
+		link(href="/css/application.css", rel="stylesheet")
+
+		script(tpe="text/javascript", src="/javascript/libs/modernizr-2.5.3-respond-1.1.0.min.js")
+
+	
+
+	body
+		//if lt IE 7
+			p.chromeframe 
+				| Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.
+
+		
+		!= partial('navigation/loginForm')

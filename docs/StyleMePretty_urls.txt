@@ -1,0 +1,288 @@
+key
+---
+~ = paginates
+x = photos only 
++ = posts only
+^ = videos only
+# = photos videos posts
+N = page needs to be built (no existing version of this page at all)
+U = page look and feel needs to change (above and beyond the header)
+
+Strategy
+--------
+* paginated pages not good landing pages (direct to higher level landing pages)
+* pages for search should have obvious titles
+* find similar ways to display similar items (photos, videos, posts) on different pages
+* Can we use parts of our current design until we get new pages built?
+* Design first or new content first?
+
+Todo
+----
+* Mark new pages to build.
+* Find examples of context sensitive navs that are good. 
+
+Decisions
+--------
+Context sensitive menus?
+same header through out
+
+Top Level
+---------
+* front page
+** weddings N
+** shop 
+** vendors U
+** gallery 
+** local  U (footer + show local blog posts on front page?)
+** fashion U
+...
+** magazine
+** events U
+** search 
+** login / dashboard
+
+Issues (i.e. where do we put the following things?)
+------
+Magazine (in header)
+Videos (somehow in galleries? seems like a bad idea)
+Events (could be in header)
+...
+Search ~#
+Login / User Dashboard
+Little Black Book Blog (links on front page and on Little Black Book page. None in the header?).
+DIY
+color palettes (under "weddings" page?)
+tags and categories (???) - have a blogs page.  Also show all tags and categories.
+
+Wordpress (how to fit these things in?)
+---------
+* /2011/  ~x
+* /2011/01/  ~x
+* /category/wedding-style/ ~x
+* /tag/california/ ~x
+* /categories/ N (list all categories on a page. Only useful if you want to cut out categories listed in the sidebar).  - Posts by: Categories | Tags | Archives
+** are fall weddings, modern weddings, loft weddings, vintage weddings categories?
+* post page x
+
+What are tags and what are categories?
+--------------------------------------
+* tags - vendors, venues, locations  (b/c there are so many of each of these things). -  can't tell what is a venue, vendor or location...using this. 
+* public cats - seasons, styles, settings, diy, colors, inspiration - can have a list of top level categories...
+* private cats - little black book blog, sponsored? 
+Categories allow for better semantics...
+Not worth cleaning up tags now?
+Pretty easy to switch tags to categories later?
+Most venues and vendors have exactly one domain.  Adding a tag just helps show people all posts by that vendor (why not switch out featured pages? and venue landing pages?)
+
+categories - SMP Blog Posts Organized by...
+----------
+seasons 
+styles
+settings 
+url: /category/settings/
+title: Real Weddings Categorized by Wedding Season
+desc:  Blog posts about real wedding categorized by the season in which the wedding occurred. 
+display excerpts.  show whether each is fall, winter, summer, etc. 
+
+-barn  
+-loft weddings  -> 
+  title: Real Weddings Categorized "Loft Weddings"
+  url:  /category/settings/loft/  (not meant to attract search) 
+  meta: noindex, follow
+  desc: All blog posts on SMP about weddings that took place in a loft.  For more photos, videos, inspiration boards, etc. see our "Loft Weddings" Page. 
+  pagination: Posts 10-20 of 123
+diy 
+- diy projects
+- budget friendly weddings
+- diy inspired
+colors 
+- orange
+- black
+- grey
+- color palettes
+inspiration (catch all category)
+- inspiration 2 reality
+- photo shoots
+- wedding videos ?
+
+What happens when someone searches "loft weddings"?
+- show "loft weddings" page
+- no category page
+- show posts categorized "loft weddings".
+
+I wish
+------
+I realy wish we could build a page that showed just posts or everything.  
+
+Weddings  (between 3 and 7 new page templates => 20 new pages)
+--------
+* /weddings/  N (seasons, settings, styles) - could promote a tour too.  might be fun to make this page interactive.  Seaon style settings dropdowns?
+* /weddings/styles/ N (list all styles)
+* /weddings/styles/rustic ~# N
+* /weddings/seasons/ N
+* /weddings/seasons/fall ~# N
+* /weddings/colors/ (later?) N
+* /weddings/posts/ N (links to tags and categories) ? 
+
+Vendors
+-------
+Keep all LBB URLs just make the pages better
+/little-black-book/ U
+/little-black-book/california U
+/little-black-book/by-category/photographers/ U
+/little-black-book/california/photographers/ U 
+/little-black-book/california/los-angeles/ U
+
+Portfolio Pages
+---------------
+jose-villa.stylemepretty.com
+jose-villa.stylemepretty.com/friends
+jose-villa.stylemepretty.com/around-the-web/ ~
+
+Featured Pages
+--------------
+/featured/erin-hearts-court/ N
+/featured/anne-taylor/ N 
+/tag/erin+hearts+court/ ~  (user favorited erin hearts court shots)
+/gallery/credit/erinheartscourt.com/favorites/ ~  (user favorited erin hearts court shots)
+(footer has links to home | about | vendors | weddings )
+badges ?
+WHAT ABOUT VENUES? - Should it be location based?  Maybe don't care.  Venues hard to get to link to us. 
+
+Gallery
+------
+gallery/gallery  ~x
+gallery/photo/123214
+gallery/color ~x
+gallery/credit/erinheartscourt.com ~x
+gallery/subject ~x
+gallery/category ~x
+gallery/tag ~x
+gallery/favorites ~ (change how this is used?  show everyone's favorites paginated)
+gallery/category/wedding-dresses/favorites/ ~x (watch as favorites get added - becomes a channel)
+gallery/credit/erinheartscourt.com/favorites/ ~x (user favorited erin hearts court shots)
+
+Dashboard
+---------
+dashboard/taitlarson/favorites/ ~# U
+dashboard/taitlarson/favorites/tag/decor/ ~# U
+dashboard/taitlarson/comments/ ~ U
+dashboard/taitlarson/inspiration-boards/ ~ U
+dashboard/taitlarson/inspiration-boards/tag/decor ~ U
+dashboard/taitlarson/settings/  (just add this at the top link?)
+
+Vendor Dashboard
+----------------
+Update business info
+Update Listings
+Vendor Page Photos
+Vendor Friends
+Vendor page Videos
+Submissions
+Profile
+Help
+Badges
+
+Local (about 7 new page templates => 70 to 700 generated pages.  Need unique text for 25% of pages (guide, venues)
+-----
+/california-weddings/guide/ N
+/california-weddings/gallery/ ~  N
+/california-weddings/events/ ~ N
+/california-weddings/cities/ N (not needed?)
+/california-weddings/shop/ N 
+/california-weddings/venues/ N how to organize? featured then by city?)
+/little-black-book/california/ 
+/california-weddings/los-angeles-weddings/ ~
+/california-weddings/los-angeles/weddings/guide/ N
+/california-weddings/los-angeles-weddings/venues/ N
+/california-weddings/los-angeles-weddings/venues/the-montage/ N
+
+Fashion
+-------
+/lookbook/
+/wedding-dresses/
+/bridesmaid-dresses/
+
+Other pages
+-----------
+Tour (show all the stuff that SMP can do)
+About (show who we are.  talk about editors. talk about the LBB)
+
+Full list of new pages
+----------------------
+* /weddings/  N (seasons, settings, styles) - could promote a tour too.
+* /weddings/styles/ N (list all styles)
+* /weddings/styles/rustic ~# N
+* /weddings/seasons/ N
+* /weddings/seasons/fall ~# N
+* /weddings/settings/outdoor ~# N
+* /weddings/colors/ (later?) N
+* /weddings/posts/ N (links to tags and categories) ? 
+/california-weddings/guide/ N
+/california-weddings/gallery/ ~  N
+/california-weddings/events/ ~ N
+/california-weddings/cities/ N (not needed?)
+/california-weddings/shop/ N 
+/california-weddings/venues/ N (how to organize? featured then by city?)
+/california-weddings/los-angeles/weddings/guide/ N
+/california-weddings/los-angeles-weddings/venues/ N
+/california-weddings/los-angeles-weddings/venues/the-montage/ N
+/featured/erin-hearts-court/ N
+
+List of pages by keyword.
+-------------------------
+/weddings/  - weddings 
+/weddings/styles/ - wedding styles
+/weddings/styles/rustic - rustic weddings (7 or 8 other terms)
+/weddings/seasons/ - weddings by season 
+/weddings/seasons/fall - fall weddings (4 terms)
+/weddings/settings/outdoor - fall weddings (4 terms)
+/weddings/colors/ - weddings by color (8 or 10 colors)
+/california-weddings/        - 	california weddings (10-70 pages)
+/california-weddings/events/ - 	wedding events california (10-70 pages)
+/california-weddings/venues/ - california wedding venues (10-70 pages)
+/california-weddings/los-angeles-weddings/venues/ - los angeles wedding venues
+/california-weddings/los-angeles-weddings/venues/the-montage/ - the montage los angeles
+
+Where can you find more key words that map to good pages that you can build?  How can we promote these pages?  Should we let people "follow" these pages on FB and twitter?
+
+Ideas
+-----
+Limit public facing post "categories"?  Only show semantically friendly ones that we can organize around keywords?
+* styles
+* settings
+* seasons
+* colors	
+This would allow us to replace the category list on the "real weddings" page with our new hierarchy of seasons, styles and settings. 
+** right now we get posts on resource pages via tags...
+
+keywords (think up some more)
+--------
+weddings
+wedding vendors
+destination weddings
+wedding blog
+wedding styles
+rustic weddings
+modern weddings
+vintage weddings
+outdoor weddings
+loft weddings
+california weddings
+california wedding vendors
+wedding events in california
+california wedding venues
+los angeles weddings
+wedding colors
+weddings by season
+
+wedding inspiration?
+diy weddings? 
+wedding dresses
+wedding invitations
+wedding photography, cinematography
+wedding videos
+wedding proposal videos
+
+How to build new pages fast...
+-fully automate? 

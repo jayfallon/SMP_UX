@@ -1,0 +1,38 @@
+.mainContent
+
+	!= partial('dashboard/laura/laura_profile')
+				
+	.account
+		!= partial('dashboard/laura/_settings_navigation')
+
+	.settingsContent
+
+		p
+
+		form(action="",method="post")
+			legend Password Change
+			ul.editFormName
+				li
+					label Current Password<br>
+					input(type="password", name="passwordcurrent", value="heytrouble")
+				li
+					label New Password<br>
+					input(type="password", name="passwordnew", value="")
+				li
+					label Confirm New Password<br>
+					input(type="password", name="passwordconfirm", value="")
+			.submit
+				input.submit-button(type="submit", value="Submit")
+					
+		.accountDelete
+			form(action="/settings/laura.fabian/account/delete",method="post")
+				legend Account Deletion
+
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				.submit
+					input.submit-button-delete(type="submit", value="Delete My Account")
+
+.sidebar
+	.adverts
+		img(src="/img/temp.jpg")

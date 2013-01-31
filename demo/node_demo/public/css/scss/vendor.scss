@@ -1,0 +1,415 @@
+.lbbNavigation{
+	margin-bottom:12px;
+	padding-bottom:12px;
+	border-bottom:1px solid #ddd;
+	@include clearfix;
+}
+
+
+.vendorNavigation{
+	float:left;
+	@include clearfix;
+	ul{
+		margin-left:12px;
+		li.upperNav{
+			background: url('/img/temp/breadcrumb.png') right no-repeat;
+			float:left;
+		}
+		li{
+			margin-right:12px;
+			padding:6px 24px 6px 0;			
+		}
+		li:last-child{
+			background: url('blank.png');
+		}
+		a{
+			color:#4690c1;
+			font-weight:bold;
+			text-decoration:none;
+			&:hover{
+				color:#333;
+				text-decoration:underline;
+			}
+		}
+	}
+}
+
+.vendorActions{
+	float:right;
+	@include clearfix;
+	ul{
+		margin:3px 12px 0 0;
+		li{
+			margin-left:12px;
+			float:left;
+			a{
+				background-color:#ececec;
+				padding:6px;
+				border:#ddd;
+				color:#999;
+				text-decoration:none;
+				&:hover{
+					background-color:#cecece;
+					border-right:#bababaa;
+					color:#333;
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+}
+
+.vendorVanity{
+	margin-bottom:12px;
+	padding-bottom:12px;
+	border-bottom:1px solid #ccc;
+	@include clearfix;
+	.avatar{
+		margin-right:20px;
+		float:left;
+	}
+	.longDescription{
+		float:left;
+		width:668px;
+		line-height:18px;
+	}
+	h3{
+		margin:0;
+		padding:0;
+		font:normal 38px georgia, serif;
+		text-transform:uppercase;
+		a{
+			color:#333;
+			text-decoration:none;
+		}
+	}
+	h6{
+		margin:0;
+		padding:0;
+		a{
+			color:#4690c1;
+			font-size:16px;
+			font-weight:bold;
+			text-decoration:none;
+			&:hover{
+				color:#333;
+				text-decoration:underline;
+			}
+		}
+	}
+}
+
+.vendorKeyPeople{
+	.keyPeople{
+		margin-bottom:12px;
+		@include clearfix;
+		.avatar{
+			margin-right:6px;
+			float:left;
+		}
+		ul.content{
+			float:left;
+			li.name{
+				font-weight:bold;
+			}
+			a{
+				color:#333;
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+.vendorContact, .vendorLocation, .vendorKeyPeople{
+	width:250px;
+	margin-bottom:24px;
+	float:right;
+	@include clearfix;
+	h5.vendorSidebar{
+		margin:0;
+		padding-bottom:12px;
+		font-size:13px;
+	}
+	ul.information{
+		li{
+			padding:3px 0;
+			a{
+				color:#333;
+				text-decoration:none;
+			}
+		}
+		li.break{
+			margin-bottom:6px;
+			padding:3px 0 12px 0;
+			border-bottom:1px solid #ddd;
+		}
+		li.helper{
+			font-size:12px;
+		}
+	}
+	ul.network{
+		margin-top:12px;
+		li{
+			margin-right:12px;
+			float:left;
+		}
+	}
+}
+
+.postContent.profile_text{
+	font-size:14px;
+	line-height:18px;
+}
+
+.profileContent{
+	background-color:#efefef;
+	margin:6px 0 18px;
+	padding:12px 6px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	@include clearfix;
+	.profileContentTitle{
+		font-size:20px;
+		float:left;
+	}
+	.profileContentLink{
+		padding-top:4px;
+		float:right;
+		a{
+			color:#333;
+		}
+	}
+}
+
+.profileBreak{
+	padding:6px;
+	text-align:right;
+	a{
+		color:#333;
+	}
+}
+
+.vendorLocation{
+	ul.address{
+		margin-bottom:12px;
+	}
+	.map{
+		height:250px;
+		border:1px solid #ddd;
+	}
+}
+
+.vendorTestimonials{
+	.testimonial{
+		margin:0 12px 12px;
+		padding-bottom:12px;
+		border-bottom:1px solid #ddd;
+		@include clearfix;
+		ul{
+			float:left;
+		}
+		li{
+			float:left;
+		}
+		li.avatar{
+			margin-right:24px;
+			width:100px;
+		}
+		li.content{
+			width:752px;
+		}
+		p.quote{
+			font-style:italic;
+			font-size:18px;
+		}
+	}
+}
+
+.vendorBusinessCard{
+	background-color:#efefef;
+	padding:6px;
+	border:1px solid #ddd;
+	@include clearfix;
+	.biz_avatar{
+		margin-right:12px;
+		width:100px;
+		text-align:center;
+		float:left;
+	}
+	.biz_content{
+		width:600px;
+		float:left;
+		h4{
+			margin:0;
+			padding:0;
+			font-size:18px;
+			a{
+				color:#333;
+				text-decoration:none;
+			}
+		}
+		p{
+			margin-top:6px;
+			font-size:13px;
+			a{
+				color:#333;
+			}
+		}
+	}
+	.biz_action{
+		width:120px;
+		text-align:right;
+		float:right;
+	}
+	a.button{
+		background-color:#dedede;
+		padding:4px;
+		border:1px solid #ccc;
+		color:#333;
+		font-size:13px;
+		text-decoration:none;
+	}
+}
+
+.vendorProfile, .vendorProfileEdit{
+	padding:0 12px 12px;
+	border-bottom:1px solid #ccc;
+	@include clearfix;
+	.avatar{
+		margin-right:20px;
+		float:left;
+		h4{
+			margin:0;
+			padding:12px 0 0;
+			text-align:center;
+		}
+	}
+}
+
+.vendorProfileEdit .avatarDisplay{
+	margin-top:12px;
+	input[type="checkbox"]{
+		margin-right:12px;
+	}
+}
+
+.vendorProfile .longDescription{
+	width:650px;
+	float:left;
+	h3{
+		margin:0;
+		padding:0;
+		font-size:32px;
+	}
+	h6{
+		margin:0;
+		padding:0;
+		font-size:24px;
+	}
+}
+
+.vendorProfile .content, .vendorProfileEdit .content{
+	margin-right:20px;
+	float:right;
+	a{
+		color:#333;
+		text-decoration:none;
+	}
+	h4{
+		margin:0;
+		padding:0;
+		font-size:18px;
+	}
+	ul li{
+		padding:4px 0;
+		span{
+			color:#999;
+			font-size:12px;
+		}
+	}
+	ul.vendorWedding{
+		margin-top:36px;
+	}
+	ul.network{
+		@include clearfix;
+		li{
+			padding-right:12px;
+			float:left;
+		}
+	}
+	ul.vendor_disciplines{
+		margin-top:12px;
+		@include clearfix;
+		li{
+			margin-right:12px;
+			text-align:center;
+			float:left;
+			span{
+				display:none;
+			}
+		}
+	}
+	ul.littleblackbook{
+		margin-top:16px;
+		a{
+			font-weight:bold;
+		}
+	}
+	li.break{
+		margin-top:6px;
+		padding-top:6px;
+		border-top:1px solid #ddd;
+	}
+}
+
+.vendorProfileEdit .content{
+	input[type="text"]{
+		background-color:#FFFFCC;
+		margin-right:6px;
+		padding:5px;
+		border:1px solid #333;
+		width:200px;
+		font-size:16px;
+	}
+	input[type="checkbox"]{
+		margin-right:12px;
+	}
+}
+
+.vendorProfile .socialActions, .vendorProfileEdit .socialActions{
+	float:right;
+	.edit{
+		margin-top:12px;
+		a{
+			background-color:#333;
+			padding:6px 8px;
+			color:#eee;
+			font-size:12px;
+			text-decoration:none;
+			text-transform:uppercase;
+		}
+	}
+	.social{
+		margin-right:12px;
+		h4{
+			margin:0;
+			padding:6px 0 6px 0;
+			font-size:16px;
+			a{
+				color:#333;
+				font-size:18px;
+				font-weight:bold;
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+.vendorProfileEdit .socialActions{
+	.edit{
+		a{
+			background-color:#FF2923;
+			color:#fff;
+		}
+	}
+}

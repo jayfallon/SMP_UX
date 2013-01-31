@@ -1,0 +1,36 @@
+.header	
+	.headerPromotion
+		| &nbsp
+	.headerLogo
+		//logo
+		h1.mainLogo
+			a(href="/")
+				span Style Me Pretty
+	.headerAction
+		//userbar
+		ul.userbar
+			li.login 
+				a(href="/signin") Sign In
+			li.register 
+				a(href="/register") Register
+			li.help 
+				a(href="/help") Help
+			li.quickboard 
+				a(href="/quickboard") Quickboard
+		//searchbox
+		.searchbox
+			form(action="/search", method="get")
+				input(name="search", type="text")
+				a.searchButton(href="/") Search
+		//social
+		ul.social
+			li.pinterest
+				a(href="") Pinterest
+			li.facebook
+				a(href="") Facebook
+			li.twitter
+				a(href="") Twitter
+
+
+//mainNav
+!= partial('header/main_nav')

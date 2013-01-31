@@ -1,0 +1,35 @@
+.mainContent
+	
+	!= partial('dashboard/laura_profile')
+
+	.favorites.single
+		!= partial('dashboard/dashboard_navigation_favorites')
+
+	.dashboardContent
+
+		
+		.dashboardContent
+			.headerWrapper
+				.boardHeader
+					h2 Napa Valley Wedding
+					.boardMeta
+						ul.dateAuthorComments
+							li.date Apr <span>11</span>
+							li.author
+								a(href="/dashboard/laura.fabian/boards") by Laura Fabian
+							li.favorites 
+								a(href="/blog_post#comments") 3 favorites
+						ul.swatches
+							li
+								img(src="/img/temp/swatch.jpg")
+				.singleNavigation
+					img(src="/img/temp/single_nav.png")
+
+			.singleWrapper
+				img(src="/img/temp/temp_single01.jpg")
+				img(src="/img/temp/temp_single02.jpg")
+				
+
+.sidebar
+	.adverts
+		img(src="/img/temp.jpg")

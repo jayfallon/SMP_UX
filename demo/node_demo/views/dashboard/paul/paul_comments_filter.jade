@@ -1,0 +1,20 @@
+.mainContent
+	
+	!= partial('dashboard/paul/paul_profile')
+
+	.comments
+		!= partial('dashboard/paul/_dashboard_navigation_comments')
+
+	.dashboardContent
+
+		.commentsFilter
+			a(href="/dashboard/paul.marino/comments") Show All
+
+		!= partial('dashboard/paul/_paul_comments_others')
+
+		!= partial('dashboard/paul/_paul_comments_others')
+				
+
+.sidebar
+	.adverts
+		img(src="/img/temp.jpg")

@@ -1,0 +1,337 @@
+.dashboardNavigation{
+	background-color:#efefef;
+	padding:12px 0;
+	border-bottom:1px solid #ccc;
+	@include clearfix;
+	ul{
+		padding-left:12px;
+		float:left;
+		li{
+			padding:4px 12px;
+			border-right:1px solid #ccc;
+			float:left;
+			a{
+				color:#333;
+				font-size:14px;
+				font-weight:bolder;			
+			}
+		}
+		li:last-child{
+			border-right:0px;
+		}
+	}
+	ul.filter{
+		margin-right:12px;
+		float:right;
+		li{
+			float:left;
+		}
+	}
+}
+
+.dashboardContent{
+	
+	.followerListItem{
+		margin:12px 6px 0;
+		padding:6px;
+		border:1px solid #ddd;
+		width:199px;
+		@include clearfix;
+		float:left;
+		h4{
+			margin:0 0 0 0;
+			padding:0;
+		}
+		a{
+			color:#333;
+			text-decoration:none;
+		}
+		ul.left{
+			width:60px;
+			float:left;
+			a{
+				font-size:12px;
+			}
+		}
+		ul.right{
+			width:139px;
+			float:left;
+			li.activity{
+				ul{
+					margin:8px 0;
+					float:left;
+					li{
+						margin-right:16px;
+						float:left;
+						span{
+							font-size:12px;
+						}
+						a{
+							font-weight:bold;
+						}
+					}
+					li:last-child{
+						padding-left:16px;
+						border-left:1px solid #ccc;
+					}
+				}
+			}
+		}
+	}
+	
+	h3{
+		margin:0;
+		padding:0 0 0 24px;
+		clear:both;
+	}
+	
+	h3.following{
+		padding:24px 0;
+		clear:both;
+		@include clearfix;
+	}
+	
+	.commentsFilter{
+		padding:24px 0 12px;
+		width:600px;
+		text-align:right;
+		a{
+			color:#333;
+		}
+	}
+	
+	.headerWrapper{
+		margin-top:24px;
+		@include clearfix;
+	}
+	.singleWrapper{
+		img{
+			float:left;
+		}
+	}
+	.singleNavigation{
+		float:right;
+		margin:12px 12px 0 0;
+	}
+	.boardHeader{
+		margin:12px 0;
+		width:580px;
+		border-left:1px solid #bababa;
+		float:left;
+		@include clearfix;
+		h2{
+			margin:0;
+			padding:0 0 8px 16px;
+			border-bottom:1px solid #bababa;
+			font-family: 'Judson', serif;
+			font-weight:normal;
+			text-transform:uppercase;
+			a{
+				color:#333;
+				text-decoration:none;
+			}
+		}
+	}
+
+	.boardMeta{
+		@include clearfix;
+		ul.dateAuthorComments{
+			margin-top:6px;
+			float:left;
+			li{
+				padding:9px 8px;
+				float:left;
+			}
+			li.date{
+				padding:4px 16px;
+				color:#92c8cc;
+				font-size:11px;
+				font-weight:bold;
+				text-transform:uppercase;
+				span{
+					font-size:18px;
+				}
+			}
+			li.author{
+				padding-left:16px;
+				border-left:1px solid #bababa;
+				a{
+					color:#333;
+					text-decoration:none;
+				}
+			}
+			li.favorites{
+				color:#92c8cc;
+				a{
+					color:#92c8cc;
+					text-decoration:none;
+				}
+			}
+		}
+		ul.swatches{
+			padding-top:6px;
+			float:right;
+		}
+	}
+}
+
+.contentListItem{
+	margin:0 0 6px;
+	padding:12px 12px 6px;
+	border-bottom:1px solid #ddd;
+	width:600px;
+	@include clearfix;
+	.avatar{
+		margin-right:12px;
+		padding-bottom:12px;
+		float:left;
+		img{
+			float:left;
+		}
+	}
+	.metaWrapper{
+		@include clearfix;
+		float:left;
+		h4{
+			margin:0 0 12px 0;
+			padding:0;
+			a{
+				color:#333;
+				text-decoration:none;
+			}
+		}
+	}
+	ul.metaActions{
+		width:538px;
+		li{
+			margin-right:12px;
+			color:#999;
+			font-size:12px;
+			float:left;
+			a{
+				color:#999;
+				text-decoration:none;
+			}
+		}
+		li.actions{
+			float:right;
+		}
+	}
+}
+
+.inspirationBoard{
+	margin:12px 6px 0 6px;
+	display:inline;
+	float:left;
+	.boardWrapper{
+		border:1px solid #ddd;
+		@include clearfix;
+	}
+	h5{
+		margin:0;
+		padding:0 0 8px 0;
+		font-size:14px;
+		text-align:center;
+		a{
+			color:#333;
+			text-decoration:none;
+		}
+	}
+	img.avatar{
+		display:block;
+	}
+	ul.actions{
+		@include clearfix;
+		li{
+			padding:4px 4px;
+			float:right;
+		}
+		li.favorites{
+			float:left;
+			a{
+				color:#333;
+				font-size:12px;
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+.profile li.profile, .subscriptions li.subscriptions, .privacy li.privacy,.account li.account, .boards li.boards, .favorites li.favorites, .following li.following, .comments li.comments, .icons li.icons, .single li.single, .list li.list, .vendor li.vendor{
+	@include settings_nav;
+}
+
+.submit input.submit-button{
+	padding:4px;
+	font-size:22px;
+}
+
+.settingsContent{
+	padding:12px;
+	border-bottom:1px solid #ccc;
+	font-size:16px;
+	p{
+		font-size:16px;
+		line-height:22px;
+	}
+	legend{
+		padding-bottom:12px;
+		font-weight:bold;
+		span{
+			color:#999;
+			font-size:12px;
+		}
+	}
+	ul{
+		margin-bottom:18px;
+		li{
+			padding:4px 0;			
+		}
+		input[type="text"], input[type="password"]{
+			background-color:#ffffcc;
+			width:260px;
+			padding:6px;
+			font-size:18px;
+		}
+	}
+	ul.editFormWedding{
+		@include clearfix;
+		li{
+			margin-right:12px;
+			float:left;
+		}
+		li.inter{
+			padding-top:34px;
+		}
+	}
+	.accountDelete{
+		margin-top:12px;
+		padding:12px;
+		border:1px solid red;
+		input{
+			font-size:24px;
+		}
+	}
+}
+
+.subscriptionContent{
+	margin-bottom:12px;
+	padding:0 12px 12px;
+	@include clearfix;
+	.avatar{
+		margin-right:20px;
+		float:left;
+	}
+	ul.subscriptionText{
+		width:600px;
+		float:left;
+	}
+	h4{
+		margin:0;
+		padding:0;
+		a{
+			color:#333;
+			text-decoration:none;
+		}
+	}
+}

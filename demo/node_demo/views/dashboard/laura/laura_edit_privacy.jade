@@ -1,0 +1,25 @@
+.mainContent
+
+	!= partial('dashboard/laura/laura_profile')
+				
+	.privacy
+		!= partial('dashboard/laura/_settings_navigation')
+
+	.settingsContent
+	
+		p
+	
+		form(action="",method="post")
+			legend Privacy
+
+			p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			p Your current profile is set to "Public." If your profile is "Public" anyone can view your inspiration boards, favorites, comments and colors.
+
+			p <input type="checkbox" unchecked> Change my profile to "Private"
+		
+			.submit
+				input.submit-button(type="submit", value="Save")
+.sidebar
+	.adverts
+		img(src="/img/temp.jpg")

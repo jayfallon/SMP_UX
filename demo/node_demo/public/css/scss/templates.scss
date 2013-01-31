@@ -1,0 +1,95 @@
+html, body{
+	background:#C5C2BC url('/img/smp_bg.png');
+	margin:0;
+	padding:0;
+}
+
+body{
+	color:#333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+h2{
+	font: normal 30px 'Judson', serif;
+	text-transform:uppercase;
+	a{
+		color:#333;
+		text-decoration:none;
+	}
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+li{
+	list-style:none;
+}
+
+.globalWrapper{
+	background-color:#FFF;
+	margin:0 auto;
+	padding:0 12px 12px;
+	width:1170px;
+}
+
+.main{
+	padding:18px 0;
+	@include clearfix;
+}
+
+.sectionHeading{
+	padding:0 0 12px;
+	@include clearfix;
+	h2.pageHeader{
+		margin:0;
+		padding:0;
+		font-size:36px;
+		float:left;
+	}
+	.filterWrapper{
+		float:right;
+		a.filterButton{
+			background-color:#DFDAD5;
+			margin-left:3px;
+			padding:4px 12px;
+			border:1px solid #bababa;
+			color:#403F3E;
+			font-size:12px;
+			font-weight:bold;
+			text-transform:uppercase;
+			text-decoration:none;
+		}
+	}
+}
+
+.mainContent{
+	width:900px;
+	float:left;
+}
+
+.vendorContent{
+	width:900px;
+	float:left;
+}
+
+.pageBar{
+	border-bottom:1px solid #999;
+	h2{
+		margin:0;
+		padding:12px 0;
+	}
+}
+
+.sidebar{
+	width:270px;
+	float:right;
+	.adverts{
+		margin-right:17px;
+		width:235;
+		float:right;
+	}
+}
+	

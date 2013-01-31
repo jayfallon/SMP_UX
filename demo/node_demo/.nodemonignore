@@ -1,0 +1,7 @@
+# ignore the static directory
+/public/*
+/views/*
+*.scss
+*.css
+*.js
+*.jade

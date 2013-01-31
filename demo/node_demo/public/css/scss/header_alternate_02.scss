@@ -1,0 +1,91 @@
+.userbarWrapper{
+	@include clearfix;
+	ul{
+		margin-top:8px;
+		float:right;
+		li{
+			padding:0 8px;
+			border-right:1px solid #CCC;
+			float:left;
+		}
+		a{
+			color:#666;
+			text-decoration:none;
+		}
+	}
+	.altSearchbox{
+		margin-top:8px;
+		float:left;
+		input[type="text"]{
+			padding:5px;
+			width:184px;
+			border:1px solid #bababa;
+		}
+		a.searchButton{
+			background-color:#DFDAD5;
+			margin-left:3px;
+			padding:4px 12px;
+			border:1px solid #bababa;
+			color:#403F3E;
+			font-size:12px;
+			font-weight:bold;
+			text-transform:uppercase;
+			text-decoration:none;
+		}
+	}
+}
+
+.logoWrapper{
+	h1.mainLogo{
+		background: url('/img/logo_smp_big.png') no-repeat;
+		margin:0 auto;
+		width:330px;
+		height:93px;
+		a{
+			background-color:transparent;
+			width:330px;
+			height:93px;
+			position:absolute;
+		}
+		span{
+			display:none;
+		}
+	}
+}
+
+.mainNavWrapper{
+	padding:8px 0;
+	border-top:1px solid #AFAEAE;
+	border-bottom:1px solid #AFAEAE;
+	@include clearfix;
+	.mainNavItem{
+		padding:8px 0;
+		border-right:1px solid #AFAEAE;
+		width:204px;
+		font-family: georgia, "Times New Roman", serif;
+		text-align:center;
+		float:left;
+		a{
+			color:#333;
+			font-size:15px;
+			font-weight:bold;
+			text-decoration:none;
+		}
+	}
+	.last{
+		border-right:0px;
+	}
+}
+
+.pageBar{
+	border-bottom:1px solid #999;
+	h2{
+		margin:0;
+		padding:12px 0;
+		color:#333;
+		font-family: 'Judson', serif;
+		font-size:48px;
+		font-weight:normal;
+	}
+}
+

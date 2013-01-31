@@ -1,0 +1,122 @@
+.memberProfile, .memberProfileEdit{
+	padding:0 12px 12px;
+	border-bottom:1px solid #ccc;
+	@include clearfix;
+	.avatar{
+		margin-right:20px;
+		float:left;
+		h4{
+			margin:0;
+			padding:12px 0 0;
+			text-align:center;
+		}
+	}
+}
+
+.memberProfileEdit .avatarDisplay{
+	margin-top:12px;
+	input[type="checkbox"]{
+		margin-right:12px;
+	}
+}
+
+.memberProfile .content, .memberProfileEdit .content{
+	margin-right:20px;
+	float:left;
+	a{
+		color:#333;
+		text-decoration:none;
+	}
+	h4{
+		margin:0;
+		padding:0;
+		font-size:18px;
+	}
+	ul li{
+		padding:4px 0;
+		span{
+			color:#999;
+			font-size:12px;
+		}
+	}
+	ul.memberWedding{
+		margin-top:36px;
+	}
+	ul.network{
+		@include clearfix;
+		li{
+			padding-right:12px;
+			float:left;
+		}
+	}
+	ul.vendor_disciplines{
+		margin-top:12px;
+		@include clearfix;
+		li{
+			margin-right:12px;
+			text-align:center;
+			float:left;
+			span{
+				display:none;
+			}
+		}
+	}
+	ul.littleblackbook{
+		margin-top:16px;
+		a{
+			font-weight:bold;
+		}
+	}
+}
+
+.memberProfileEdit .content{
+	input[type="text"]{
+		background-color:#FFFFCC;
+		margin-right:6px;
+		padding:5px;
+		border:1px solid #333;
+		width:200px;
+		font-size:16px;
+	}
+	input[type="checkbox"]{
+		margin-right:12px;
+	}
+}
+
+.memberProfile .socialActions, .memberProfileEdit .socialActions{
+	float:right;
+	.edit{
+		margin-top:12px;
+		a{
+			background-color:#333;
+			padding:6px 8px;
+			color:#eee;
+			font-size:12px;
+			text-decoration:none;
+			text-transform:uppercase;
+		}
+	}
+	.social{
+		margin-right:12px;
+		h4{
+			margin:0;
+			padding:6px 0 6px 0;
+			font-size:16px;
+			a{
+				color:#333;
+				font-size:18px;
+				font-weight:bold;
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+.memberProfileEdit .socialActions{
+	.edit{
+		a{
+			background-color:#FF2923;
+			color:#fff;
+		}
+	}
+}

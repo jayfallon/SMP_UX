@@ -1,0 +1,52 @@
+.mainContent
+
+	!= partial('dashboard/laura/laura_profile')
+				
+	.subscriptions
+		!= partial('dashboard/laura/_settings_navigation')
+
+	.settingsContent
+
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		form(action="",method="post")
+			legend Subscriptions
+
+			.subscriptionContent
+				.avatar
+					a(href="")
+						img(src="/img/temp/newsletterAvatar.png")
+				ul.subscriptionText
+					li
+						h4
+							a(href="") Newsletter 01
+					li Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					li <input type="checkbox" checked> Subscribe me to Newsletter 01
+
+			.subscriptionContent
+				.avatar
+					a(href="")
+						img(src="/img/temp/newsletterAvatar.png")
+				ul.subscriptionText
+					li
+						h4 
+							a(href="") Newsletter 02
+					li Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					li <input type="checkbox" unchecked> Subscribe me to Newsletter 02
+
+			.subscriptionContent
+				.avatar
+					a(href="")
+						img(src="/img/temp/newsletterAvatar.png")
+				ul.subscriptionText
+					li
+						h4
+							a(href="") Newsletter 03
+					li Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					li <input type="checkbox" unchecked> Subscribe me to Newsletter 03 
+		
+			.submit
+				input.submit-button(type="submit", value="Save")
+.sidebar
+	.adverts
+		img(src="/img/temp.jpg")

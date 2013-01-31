@@ -1,0 +1,39 @@
+//build a board
+.boardBuilder
+	a(href="/board_builder")
+		span Build A Board
+
+.header	
+	.headerPromotion
+		| &nbsp
+	.headerLogo
+		//logo
+		h1.mainLogo.small
+			a(href="/")
+				span Style Me Pretty
+	.headerAction
+		//userbar
+		.userbar
+			ul
+				li.user
+					.avatar
+						a(href="/dashboard/laura.fabian")
+							img(src="/img/temp/laura_thumb.png", width="32", height="32")
+					.username
+						a(href="/dashboard/laura.fabian") Laura Fabian
+					.usersettings
+						a(href="/dashboard/laura.fabian/edit/profile")
+							img(src="/img/settings.png")
+				li.help 
+					a(href="/help") Help
+				li.quickboard 
+					a(href="/quickboard") Quickboard
+		//searchbox
+		.searchbox
+			form(action="/search", method="get")
+				input(name="search", type="text")
+				a.searchButton(href="/") Search
+
+
+//mainNav
+!= partial('header/main_nav')

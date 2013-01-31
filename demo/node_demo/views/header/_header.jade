@@ -1,0 +1,51 @@
+//build a board
+.boardBuilder
+	a(href="/board_builder")
+		span Build A Board
+
+.header	
+	.headerPromotion
+		| &nbsp
+	.headerLogo
+		//logo
+		h1.mainLogo
+			a(href="/")
+				span Style Me Pretty
+	.headerAction
+		//userbar
+		.userbar
+			ul
+				li.submission 
+					a(href="/submission") Submit Your Photos
+				li.help 
+					a(href="/help") Help
+				li.user
+					.avatar
+						a(href="/dashboard/laura.fabian")
+							img(src="/img/temp/laura_thumb.png", width="32", height="32")
+					.username
+						a(href="/dashboard/laura.fabian") Laura
+					.usersettings
+						a(href="/settings/laura.fabian/")
+							img(src="/img/settings.png")
+		//searchbox
+		.searchbox
+			form(action="/search", method="get")
+				input(name="search", type="text")
+				a.searchButton(href="/") Search
+		//social
+		.social
+			ul
+				li.pinterest
+					a(href="http://pinterest.com/stylemepretty/") 
+						span Pinterest
+				li.facebook
+					a(href="https://www.facebook.com/stylemepretty") 
+						span Facebook
+				li.twitter
+					a(href="https://twitter.com/#!/stylemepretty") 
+						span Twitter
+
+
+//mainNav
+!= partial('header/main_nav')

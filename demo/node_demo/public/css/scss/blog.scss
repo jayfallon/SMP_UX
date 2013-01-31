@@ -1,0 +1,146 @@
+.post{
+	margin:0 0 32px 0;
+	width:900px;
+	@include clearfix;
+}
+
+.postHeader{
+	border-left:1px solid #bababa;
+	@include clearfix;
+	h2{
+		margin:0;
+		padding:0 0 8px 16px;
+		border-bottom:1px solid #bababa;
+		font-family: 'Judson', serif;
+		font-weight:normal;
+		text-transform:uppercase;
+		a{
+			color:#333;
+			text-decoration:none;
+		}
+	}
+}
+
+.postMeta{
+	@include clearfix;
+	ul.dateAuthorComments{
+		margin-top:6px;
+		float:left;
+		li{
+			padding:9px 8px;
+			float:left;
+		}
+		li.date{
+			padding:4px 16px;
+			color:#92c8cc;
+			font-size:11px;
+			font-weight:bold;
+			text-transform:uppercase;
+			span{
+				font-size:18px;
+			}
+		}
+		li.author{
+			padding-left:16px;
+			border-left:1px solid #bababa;
+		}
+		li.comments{
+			color:#92c8cc;
+			a{
+				color:#92c8cc;
+				text-decoration:none;
+			}
+		}
+	}
+	ul.swatches{
+		padding-top:6px;
+		float:right;
+	}
+}
+
+.postContent{
+	padding:18px 12px 0 12px;
+	font-size:16px;
+	line-height:22px;
+}
+
+.postBoard{
+	padding:18px 0 0;
+	@include clearfix;
+	.postBoardPair{
+		img.left{
+			float:left;
+		}
+		img.right{
+			float:right;
+		}
+	}
+}
+
+.postCommentsSize{
+	margin-top:12px;
+	border-top:1px solid #ccc;
+	width:600px;
+	h3{
+		font-size:16px;
+		a{
+			color:#333;
+			text-decoration:none;
+		}
+	}
+}
+
+.postComment{
+	margin-top:12px;
+	padding:12px 0;
+	width:600px;
+	border-top:1px solid #ccc;
+	@include clearfix;
+	ul.user{
+		margin:0 10px;
+		float:left;
+		li{
+			line-height:18px;
+			text-align:center;
+		}
+	}
+	.commentMeta{
+		width:530px;
+		float:left;
+		@include clearfix;
+	}
+	.top{
+		@include clearfix;
+	}
+	.username{
+		float:left;
+		h4{
+			margin:0;
+			padding:0 0 4px;
+			font-size:18px;
+			font-weight:bold;
+			a{
+				color:#333;
+				text-decoration:none;
+			}
+		}
+	}
+	.message{
+		width:430px;
+		a{
+			color:#333;
+			text-decoration:none;
+		}
+	}
+	.favorite{
+		width:100px;
+		text-align:right;
+		float:right;
+	}
+	.date{
+		padding-top:16px;
+		color:#999;
+		font-size:12px;
+		font-style:italic;
+	}
+}

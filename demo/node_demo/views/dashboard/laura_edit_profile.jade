@@ -1,0 +1,47 @@
+.mainContent
+
+	!= partial('dashboard/laura_profile')
+	.profile			
+		!= partial('dashboard/_settings_navigation')
+
+	.settingsContent
+
+		p The username you have chose is laura.fabian and cannot be changed. However, youmay customize the name other Style Me Pretty users will recognize you by and your email address through which Style Me Pretty may contact you.
+		p We promise not to share your email address with anyone or spam you.
+
+		form(action="",method="post")
+			legend Personal Information
+			ul.editFormName
+				li
+					label Full Name<br>
+					input(type="text", name="username", value="Laura Fabian")
+				li
+					label Email Address<br>
+					input(type="text", name="email", value="laurafabian@gmail.com")
+
+			legend Social Networks <span>(link to your profiles)</span>
+			ul.editFormSocialMedia
+				li
+					label Pinterest<br>
+					input(type="text", name="pinterest", value="http://pinterest.com/laurafabian")
+				li
+					label Facebook<br>
+					input(type="text", name="facebook", value="http://facebook.com/laura.fabian")
+				li
+					label Twitter<br>
+					input(type="text", name="twitter", value="http://twitter.com/laurafabian")
+		
+			legend Wedding Information
+			ul.editFormWedding
+				li
+					label Date<br>
+					input(type="text", name="weddingdate")
+				li.inter in
+				li
+					label Location<br>
+					input(type="text", name="weddinglocation", value="Aspen, Colorado")
+			.submit
+				input.submit-button(type="submit", value="Save")
+.sidebar
+	.adverts
+		img(src="/img/temp.jpg")

@@ -1,0 +1,24 @@
+.mainContent
+
+	!= partial('dashboard/laura_profile')
+	.account
+		!= partial('dashboard/_settings_navigation')
+
+	.settingsContent
+
+		p
+
+		form(action="/signout", method="get")
+			legend We're sorry to see you go.
+			p Deleting your account will delete any and all of your inspiration boards, favorites, comments and uploads.
+			ul.editFormName
+				li
+					label Pleade enter your username to confirm<br>
+					input(type="text", name="accountdelte")
+			.submit
+				input.submit-button-delete(type="submit", value="Submit")
+
+
+.sidebar
+	.adverts
+		img(src="/img/temp.jpg")
