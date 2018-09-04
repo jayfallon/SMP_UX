@@ -2,7 +2,7 @@
   "name": "style-me-pretty",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.4",
+    "express": "3.11.0",
 		"jade": "0.20.3",
     "passport": ">= 0.0.0",
     "passport-local": ">= 0.0.0"
